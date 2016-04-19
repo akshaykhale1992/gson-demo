@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Gson Demo</string>
+    <string name="search_btn_text">Search Channel Videos</string>
+    <string name="search_edit_text_hint">Enter Channel ID</string>
+    <string name="youtube_api_url">https://www.googleapis.com/youtube/v3/search?key=AIzaSyC54PL33m_P2dURNQiKsusrzvJDizu_Yzs&amp;part=snippet,id&amp;order=date&amp;maxResults=30&amp;channelId=</string>
+</resources>
