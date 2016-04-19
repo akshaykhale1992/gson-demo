@@ -11,6 +11,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Custom List Adapter Class
+ * for Custom ListView
+ */
 public class CustomListAdapter extends BaseAdapter {
     private Activity activity;
     private ArrayList<HashMap<String, String>> videoData;

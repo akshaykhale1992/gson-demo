@@ -25,21 +25,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         searchButton.setOnClickListener(this);
     }
 
+    /**
+     * Function which selects views
+     * from Layout and assigns to
+     * view objects declared as
+     * Member fields.
+     */
     private void selectViews(){
         listView = (ListView) findViewById(R.id.video_details);
         editTextView = (EditText) findViewById(R.id.editText);
         searchButton = (Button) findViewById(R.id.search_button);
     }
 
+    /**
+     * Overriden virtual method of
+     * OnClickListener Interface
+     * @param v View
+     */
     @Override
     public void onClick(View v) {
         try {
+            //Getting Api URL from Strings.xml file from Resources.
             String apiUrl = getResources().getString(R.string.youtube_api_url).toString();
             apiUrl = apiUrl + editTextView.getText().toString();
             apiResponseString = Utility.getJson(apiUrl);
 
             ArrayList<HashMap <String,String>> listItems = new ArrayList();
             if(apiResponseString != null && apiResponseString != ""){
+                //Creating Gson Object and mapping object to YoutubeResponse Class
                 Gson gson = new Gson();
                 YoutubeResponse youtubeResponse = gson.fromJson(apiResponseString, YoutubeResponse.class);
                 for(int i=0;i < youtubeResponse.items.length;i++) {

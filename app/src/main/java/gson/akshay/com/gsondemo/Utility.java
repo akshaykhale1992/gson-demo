@@ -11,7 +11,16 @@ import java.net.URL;
  */
 public class Utility {
     public static String jsonData = "";
+
+    /**
+     * Function which connects to
+     * given URL and returns
+     * response as String
+     * @param apiUrl String URL of API
+     * @return String
+     */
     public static String getJson(final String apiUrl){
+        //Creating Async Task to coneect and get response.
         AsyncTask<String,String,String> asynTask = new AsyncTask<String, String, String>() {
             @Override
             protected String doInBackground(String... params) {
