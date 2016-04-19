@@ -1,5 +1,5 @@
 #Gson Demo
-This repository demonstrates working of Popular JSON processing Library [Gson](https://github.com/google/gson) Library
+This repository demonstrates working of Popular JSON processing Library [Gson](https://github.com/google/gson).
 
 This app Connects to [Youtube API](https://developers.google.com/youtube/) and fetch Channel Video List and shows details in a Custom [Listview](http://developer.android.com/reference/android/widget/ListView.html).
 
