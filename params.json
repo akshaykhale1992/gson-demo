@@ -1,0 +1,6 @@
+{
+  "name": "Gson-demo",
+  "tagline": "Android application which demonstrated working of GSon Library",
+  "body": "#Gson Demo\r\nThis repository demonstrates working of Popular JSON processing Library [Gson](https://github.com/google/gson).\r\n\r\nThis app Connects to [Youtube API](https://developers.google.com/youtube/) and fetch Channel Video List and shows details in a Custom [Listview](http://developer.android.com/reference/android/widget/ListView.html).\r\n\r\nTo include Library in Project we have added \r\n\r\n    compile 'com.google.api-client:google-api-client-gson:1.21.0'\r\n\r\nto **build.gradle** file in the App folder.\r\n\r\nThe project contains Four Classes\r\n\r\n 1. MainActivity.java: Main Activity file of the Application.\r\n 2. CustomListAdapter: Adapter class extending BaseAdapter for custom ListView\r\n 3. Utility: Class containing helper functions.\r\n 4. YoutubeResponse: Class which gets mapped to the Youtube API response. We are using GSon Library to do the Mapping.\r\n\r\nThe project has only one Activity the MainActivity with a TextView and a Button for searching channel data based on channel ID entered in TextView.\r\n\r\nApp Permissions\r\nApp uses only `android.permission.INTERNET` permission.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
